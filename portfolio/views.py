@@ -1,5 +1,6 @@
 from django.shortcuts import render
+from .models import Project
 
 def portfolio(request):
-    # Lógica para obtener y mostrar los proyectos del portfolio
-    return render(request, 'portfolio/portfolio.html', context)
+    projects = Project.objects.all()
+    return render(request, 'portfolio/portfolio.html', {'projects':projects})
