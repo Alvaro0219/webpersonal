@@ -5,4 +5,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #App core
     path('', include('core.urls')),
+    #App portfolio
+    path('portfolio/', include('portfolio.urls')),
 ]
