@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'portfolio',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -116,3 +117,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #Archivos media
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#Configuracion email
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '1af0bebfd9b2c7'
+EMAIL_HOST_PASSWORD = '77e4b068152127'
+EMAIL_PORT = '2525'

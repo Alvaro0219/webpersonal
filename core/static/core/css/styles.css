@@ -1,197 +1,261 @@
-body{
-    background: #f2f2f2;
+body {
+    background-color: #f2f2f2;
     font-family: 'Open Sans', sans-serif;
 }
-header{
-    margin-top: 30px; 
+
+header {
+    margin-top: 30px;
 }
 
-header .nav{
+header .nav {
     min-height: 80px;
     overflow: hidden;
-    background: #fff;
+    background-color: #007bff; /* Azul predominante */
 }
+
 /* Logo */
 header .logo a,
 header .logo samp,
-header .logo p{
+header .logo p {
     font-size: 16px;
     display: inline-block;
     margin: 0;
+    color: #ffffff; /* Texto blanco */
 }
 
-header .logo .nombre{
+header .logo .nombre {
     font-weight: 800;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
 }
 
-header .logo .icono{
+header .logo .icono {
     color: #bfbfbf;
 }
-header .logo p{
-    color: #777777;
+
+header .logo p {
+    color: #ffffff; /* Texto blanco */
 }
-/* Menu de navegacion */
-header .menu{
+
+/* Menú de navegación */
+header .menu {
     padding: 0;
 }
 
-header .menu a{
+header .menu a {
     display: block;
     padding: 0 30px;
     text-decoration: none;
-    color: #f2f2f2;
+    color: #ffffff; /* Texto blanco */
+    transition: background-color 0.3s; /* Agregamos una transición suave */
 }
 
-header .menu a div span{
+header .menu a div span {
     font-weight: 600;
     text-transform: uppercase;
 }
 
-header .menu .c-1 {background: #1aaf7e;}
-header .menu .c-2 {background: #108d63;}
-header .menu .c-3 {background: #0c7754;}
+/* Asignamos colores a los diferentes botones */
+header .menu .c-1 {
+    background-color: #b3e0ff; /* Azul claro */
+}
 
-header .menu .c-1:hover {background: #3fdda8;}
-header .menu .c-2:hover {background: #2ca77e;}
-header .menu .c-3:hover {background: #319775;}
+header .menu .c-2 {
+    background-color: #80ccff; /* Azul */
+}
+
+header .menu .c-3 {
+    background-color: #4da6ff; /* Azul medio */
+}
+
+header .menu .c-4 {
+    background-color: #1a75ff; /* Azul oscuro */
+}
+
+/* Cambiamos el color de fondo al pasar el ratón */
+header .menu a:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
 
 /* Slider */
-
-.slider{
+.slider {
     margin-bottom: 40px;
 }
-.slider .col{
+
+.slider .col {
     padding: 0;
 }
-/*Portafolio */
-.contenedor{
-    background: #fff;
-    border-top: 5px solid #0c7754;
+.slider-image {
+    max-width: 80%; /* Ajusta el ancho máximo según tu preferencia */
+    height: auto; /* Mantener la proporción original */
+    margin: auto; /* Centrar horizontalmente */
+}
+
+/* Portafolio */
+.contenedor {
+    background-color: #ffffff; /* Fondo blanco */
+    border-top: 5px solid #0056b3; /* Azul más oscuro */
     padding: 0 20px;
 }
 
-.titulo{
+.titulo {
     padding: 40px 0;
     text-align: center;
-    color: #0c7754;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    color: #0056b3; /* Azul más oscuro */
+    font-weight: 700; /* Negrita */
 }
-.title-project{
+
+.title-project {
     padding: 10px 0;
-    color: #0c7754;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-}
-.contenedor .projects .content-project .link-project{
-    background: #108d63;
-    display: inline-block;
-    color: #fff;
+    color: #0056b3; /* Azul más oscuro */
+    font-weight: 700; /* Negrita */
 }
 
-.contenedor .projects .content-project .link-project:hover{
-    background: #1faa7c;
-    display: inline-block;
-    color: #fff;
+.contenedor .projects .content-project .link-project {
+    background-color: #47596c; /* Azul predominante */
+    display: inline-block; /* Cambiado a inline-block */
+    color: #ffffff; /* Texto blanco */
+    text-align: center; /* Centrado */
+    padding: 10px 20px; /* Agregado espacio alrededor del botón */
+    margin-top: 10px; /* Agregado espacio entre proyectos */
+    text-decoration: none; /* Quitada la subraya */
+    width: auto; /* Ancho automático */
+    max-width: 100%; /* Ancho máximo del 100% */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
 }
 
-.contenedor .projects .content-project{
+.contenedor .projects .content-project .link-project:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+.contenedor .projects .content-project {
     margin-bottom: 40px;
-    max-height: 200px;
-    overflow: hidden;
 }
 
-.contenedor .projects .content-project a{
-    background: #25d198;
-    display: inline-block;
-}
-.contenedor .projects .content-project:hover img{
-    opacity: .3;
+.contenedor .projects .content-project img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho */
 }
 
-.contenedor .modal-dialog{
-    margin: 0px auto;
+.contenedor .modal-dialog {
+    margin: 0 auto;
     height: 100%;
     max-width: 1000px;
 }
 
-.contenedor .modal-content{
+.contenedor .modal-content {
     width: auto;
 }
-/* Contacto */
-.contacto{
-    padding: 10px 0;
+
+/* Estilos para el formulario de contacto */
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
-    text-align: center;
-    
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
-.contacto .icono{
-    width: 80px;
-    height: 80px;
-    font-size: 40px;
-    line-height: 80px;
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #007bff;
     color: #fff;
-    text-align: center;
-    background: #c5cac8;
-    display: inline-block;
-    margin: 0px 20px;
-    text-decoration: none;
-    border-radius: 80px;
-    transition: all .3s ease;
-    overflow: hidden;
-    
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-.contacto .phone{background: #151618}
-.contacto .mail{background: #ec2525}
-.contacto .mobile{background: #293a33}
-.contacto .whatsapp{background: #1ca144}
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
 
-.contacto .phone:hover:hover{background: #585e63}
-.contacto .mail:hover{background: #ca5454}
-.contacto .mobile:hover{background: #629b83}
-.contacto .whatsapp:hover{background: #4e9b65}
+.contact-form .success-message {
+    color: #28a745;
+}
 
-/* footer*/
-.redes-sociales{
+.contact-form .error-message {
+    color: #dc3545;
+}
+
+
+/* Footer */
+.redes-sociales {
     padding: 40px 0;
     margin-bottom: 40px;
     text-align: center;
 }
-.redes-sociales .icono{
+
+.redes-sociales .icono {
     width: 80px;
     height: 80px;
     font-size: 40px;
     line-height: 80px;
-    color: #fff;
+    color: #ffffff; /* Texto blanco */
     text-align: center;
-    background: #108d63;
+    background-color: #007bff; /* Azul predominante */
     display: inline-block;
-    margin: 0px 20px;
+    margin: 0 20px;
     text-decoration: none;
     border-radius: 80px;
     transition: all .3s ease;
 }
-.redes-sociales .icono:hover{
-    background: #1aaf7e;
-}
-.redes-sociales .copyright{
-    padding: 20PX 0;
+
+.redes-sociales .icono:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
 }
 
-.redes-sociales .copyright samp P{
+.redes-sociales .copyright {
+    padding: 20px 0;
+}
+
+.redes-sociales .copyright samp p {
     font-family: 'Open Sans', sans-serif;
 }
-/*---MEDIAQUERIES--- */
-/* Dispositivo xl */
-@media screen and (max-width:1199px){}
 
+/* Estilos para el Contenido de Contacto */
+
+.contacto-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contacto-item {
+    text-align: center;
+    margin-bottom: 40px; /* Espaciado inferior */
+}
+
+/* Estilos específicos para los iconos de contacto */
+.phone-contact,
+.mail-contact,
+.whatsapp-contact {
+    font-size: 48px; /* Tamaño de los iconos de contacto */
+}
+
+/* Media Queries */
 /* Dispositivo lg */
-@media screen and (max-width:991px){
+@media screen and (max-width: 991px) {
     .logo {
         height: 76px;
     }
@@ -201,31 +265,27 @@ header .menu .c-3:hover {background: #319775;}
     .menu a {
         width: 100%;
     }
-    .menu a div{
+    .menu a div {
         width: 100%;
     }
-
-    .modal .modal-dialog{
+    .modal .modal-dialog {
         width: 90%;
     }
-    .modal .modal-dialog .modal-content img{
+    .modal .modal-dialog .modal-content img {
         width: 100%;
     }
 }
 
-/* Dispositivo md */
-@media screen and (max-width:767px){}
-
 /* Dispositivo sm */
-@media screen and (max-width:575px){
-    header{
+@media screen and (max-width: 575px) {
+    header {
         margin-top: 0;
     }
     header .logo .nombre,
     header .logo p {
         font-size: 13px;
     }
-    header .menu a{
+    header .menu a {
         font-size: 14px;
     }
 }

@@ -8,6 +8,8 @@ urlpatterns = [
     path('', include('core.urls')),
     #App portfolio
     path('', include('portfolio.urls')),
+    #app contact
+    path('', include('contact.urls')),
 ]
 
 if settings.DEBUG:
