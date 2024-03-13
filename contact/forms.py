@@ -8,5 +8,5 @@ class ContactForm(forms.Form):
         attrs={'class':'form-control', 'placeholder':'Correo Electronico'}
     ))
     content= forms.CharField(required=True, widget=forms.Textarea(
-        attrs={'class':'form-control', 'placeholder':'Deje su comentario'}
+        attrs={'class':'form-control', 'placeholder':'Deje su consulta'}
     ))
